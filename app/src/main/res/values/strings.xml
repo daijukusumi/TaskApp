@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TaskApp</string>
+    <string name="action_settings">Settings</string>
+
+    <!--カテゴリのステータス-->
+    <string name="category_status_select">カテゴリの選択</string>
+    <string name="category_status_edit">カテゴリの編集</string>
+
+    <!--カテゴリ編集ボタンの表示テキスト-->
+    <string name="category_button_edit">編集</string>
+    <string name="category_button_delete">削除</string>
+    <string name="category_button_revise">修正</string>
+    <string name="category_button_cancel">キャンセル</string>
+    <string name="category_button_select">リストからカテゴリを選択</string>
+
+    <string name="spinner_prompt">プロンプトのテキスト</string>
+
+</resources>

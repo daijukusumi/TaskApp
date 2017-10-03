@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jp.techacademy.kusumi.daiju.taskapp.InputActivity"
+    tools:showIn="@layout/activity_input">
+
+    <EditText
+        android:id="@+id/title_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="タイトル"
+        android:layout_marginTop="120dp"
+
+
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/content_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_edit_text"
+        android:hint="内容" />
+
+    <Button
+        android:id="@+id/buttonCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/new_category_button"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/content_edit_text"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/times_button"
+        android:text="----/--/--"
+        style="@style/Widget.AppCompat.Button.Borderless" />
+
+    <Button
+        android:id="@id/times_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/content_edit_text"
+        android:text="--:--" />
+
+    <Button
+        android:id="@+id/done_button"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:text="決定"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/buttonEdit"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="カテゴリ"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/new_category_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="新規作成"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="120dp" />
+
+    <Button
+        android:id="@+id/edit_category_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="編集・削除"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
